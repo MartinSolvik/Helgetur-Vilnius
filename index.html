@@ -184,6 +184,66 @@
       gap: 10px;
       margin-left: 50px;
     }
+
+    .restaurant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .restaurant-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .restaurant-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .restaurant-number {
+      display: inline-block;
+      background-color: #667eea;
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      font-weight: bold;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .restaurant-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .restaurant-cuisine {
+      font-size: 0.85em;
+      color: #667eea;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .restaurant-description {
+      font-size: 0.95em;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .restaurant-links {
+      display: flex;
+      gap: 10px;
+    }
   </style>
 </head>
 <body>
@@ -233,7 +293,7 @@
         </div>
       </div>
 
-      <h3 style="color: white; margin-top: 40px; margin-bottom: 20px;">Bar Crawl Route - Old Town</h3>
+      <h3 style="color: white; margin-top: 40px; margin-bottom: 20px;">Bar Crawl Route - Old Town (maks 10 min gange mellom hver)</h3>
       
       <div class="bar-crawl-card">
         <div class="bar-header">
@@ -250,9 +310,21 @@
       <div class="bar-crawl-card">
         <div class="bar-header">
           <span class="bar-number">2</span>
+          <div class="bar-name"><a href="https://maps.google.com/?cid=8463396961145107177" target="_blank">Šnekutis</a></div>
+        </div>
+        <div class="bar-description">Traditionell lithuanian taverne. Rustic farmhouse-øl og hearty lokalmat. Folk-art dekor. 5-7 min fra Alchemikas.</div>
+        <div class="bar-links">
+          <a href="https://snekutis.com/" target="_blank" class="link-btn">Nettside</a>
+          <a href="https://maps.google.com/?cid=8463396961145107177" target="_blank" class="link-btn">Maps</a>
+        </div>
+      </div>
+
+      <div class="bar-crawl-card">
+        <div class="bar-header">
+          <span class="bar-number">3</span>
           <div class="bar-name"><a href="https://maps.google.com/?cid=12932947179110132900" target="_blank">Alaus Namai</a></div>
         </div>
-        <div class="bar-description">Kjempesamling med 12+ taps og massiv flaske-liste. Cavernous cellar-setting, alltid livlig. Bartenderne er kunnskapsrike.</div>
+        <div class="bar-description">Kjempesamling med 12+ taps og massiv flaske-liste. Cavernous cellar-setting, alltid livlig. 8-10 min fra Šnekutis.</div>
         <div class="bar-links">
           <a href="https://www.facebook.com/Alaus.Namai.Vilnius/" target="_blank" class="link-btn">Facebook</a>
           <a href="https://maps.google.com/?cid=12932947179110132900" target="_blank" class="link-btn">Maps</a>
@@ -261,10 +333,10 @@
 
       <div class="bar-crawl-card">
         <div class="bar-header">
-          <span class="bar-number">3</span>
+          <span class="bar-number">4</span>
           <div class="bar-name"><a href="https://maps.google.com/?cid=10131100727624359141" target="_blank">Špunka</a></div>
         </div>
-        <div class="bar-description">Craft beer bar i bohemske Užupis. 5 euro pints, autentisk lokal vibe. God outdoor seating under Engelen.</div>
+        <div class="bar-description">Craft beer bar i Užupis. 5 euro pints, autentisk lokal vibe. 10 min fra Alaus Namai (krys elven).</div>
         <div class="bar-links">
           <a href="https://maps.google.com/?cid=10131100727624359141" target="_blank" class="link-btn">Maps</a>
         </div>
@@ -272,25 +344,13 @@
 
       <div class="bar-crawl-card">
         <div class="bar-header">
-          <span class="bar-number">4</span>
+          <span class="bar-number">5</span>
           <div class="bar-name"><a href="https://maps.google.com/?cid=2738418978241464017" target="_blank">Užupis District</a></div>
         </div>
         <div class="bar-description">Bohemsk kunstnerkvartal med flere små barer og pubs. Utforsk sidegatene for gjemte perler, street art og live musik.</div>
         <div class="bar-links">
           <a href="https://www.govilnius.lt/" target="_blank" class="link-btn">Visit Vilnius</a>
           <a href="https://maps.google.com/?cid=2738418978241464017" target="_blank" class="link-btn">Maps</a>
-        </div>
-      </div>
-
-      <div class="bar-crawl-card">
-        <div class="bar-header">
-          <span class="bar-number">5</span>
-          <div class="bar-name"><a href="https://maps.google.com/?cid=8463396961145107177" target="_blank">Šnekutis</a></div>
-        </div>
-        <div class="bar-description">Traditionell lithuanian taverne med rustic farmhouse-øl og hearty lokalmat. Folk-art dekor. Perfekt avslutt på bar crawlen.</div>
-        <div class="bar-links">
-          <a href="https://snekutis.com/" target="_blank" class="link-btn">Nettside</a>
-          <a href="https://maps.google.com/?cid=8463396961145107177" target="_blank" class="link-btn">Maps</a>
         </div>
       </div>
     </div>
@@ -329,14 +389,59 @@
             <a href="https://maps.google.com/?cid=2738418978241464017" target="_blank" class="link-btn">Maps</a>
           </div>
         </div>
-        
-        <div class="activity-card">
-          <div class="activity-time">Kveld</div>
-          <div class="activity-name"><a href="https://maps.google.com/?cid=8463396961145107177" target="_blank">Šnekutis</a></div>
-          <div class="activity-info">Traditionell lithuanian taverne på Šv. Mikalojaus g. 15. Rustic farmhouse-øl og hearty lokalmat. Folk-art dekor. Autentisk!</div>
-          <div class="activity-links">
+      </div>
+
+      <h3 style="color: white; margin-top: 40px; margin-bottom: 20px;">Top 5 Restauranter - Old Town</h3>
+
+      <div class="restaurant-grid">
+        <div class="restaurant-card">
+          <div class="restaurant-number">1</div>
+          <div class="restaurant-name"><a href="https://maps.google.com/?cid=8463396961145107177" target="_blank">Šnekutis</a></div>
+          <div class="restaurant-cuisine">Lithuansk tradisjonell</div>
+          <div class="restaurant-description">Autentisk lithuanian taverne med hearty lokalmat. Farmhouse-øl og unik folk-art dekor. Perfekt for å oppleve ekte lithuanian kultur.</div>
+          <div class="restaurant-links">
             <a href="https://snekutis.com/" target="_blank" class="link-btn">Nettside</a>
             <a href="https://maps.google.com/?cid=8463396961145107177" target="_blank" class="link-btn">Maps</a>
+          </div>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-number">2</div>
+          <div class="restaurant-name"><a href="https://maps.google.com/search/Forto+Dvaras+Vilnius" target="_blank">Forto Dvaras</a></div>
+          <div class="restaurant-cuisine">Lithuansk</div>
+          <div class="restaurant-description">Koselig landhuset-stil restaurant med tradisjonell lithuanian cuisine. Rimelige priser og god atmosfære. Opplevelse av autentisk lithuanian mat.</div>
+          <div class="restaurant-links">
+            <a href="https://maps.google.com/search/Forto+Dvaras+Vilnius" target="_blank" class="link-btn">Maps</a>
+          </div>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-number">3</div>
+          <div class="restaurant-name"><a href="https://maps.google.com/search/Medininkai+Vilnius" target="_blank">Medininkai</a></div>
+          <div class="restaurant-cuisine">Lithuansk</div>
+          <div class="restaurant-description">Sentral i gamlebyen med fokus på lithuanian tradisjonelle retter. Koselig miljø og moderat pris. Godt valg for middag etter kulturaktiviteter.</div>
+          <div class="restaurant-links">
+            <a href="https://maps.google.com/search/Medininkai+Vilnius" target="_blank" class="link-btn">Maps</a>
+          </div>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-number">4</div>
+          <div class="restaurant-name"><a href="https://maps.google.com/search/Prie+Angelo+Vilnius" target="_blank">Prie Angelo</a></div>
+          <div class="restaurant-cuisine">Italiensk-Lithuansk</div>
+          <div class="restaurant-description">Koselig restaurant ved kunstnerkollektivet i Užupis. God mat, rimelige priser og bohemsk atmosfære. Perfekt sted for avslapping.</div>
+          <div class="restaurant-links">
+            <a href="https://maps.google.com/search/Prie+Angelo+Vilnius" target="_blank" class="link-btn">Maps</a>
+          </div>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-number">5</div>
+          <div class="restaurant-name"><a href="https://maps.google.com/search/Žemyna+Vilnius" target="_blank">Žemyna</a></div>
+          <div class="restaurant-cuisine">Lithuansk</div>
+          <div class="restaurant-description">Lokal favorittplass for authentic lithuanian cuisine. Godt valg hvis du vil ha ekte mat til rimelig pris. Kort meny, alt fersk og kvalitetsmessig.</div>
+          <div class="restaurant-links">
+            <a href="https://maps.google.com/search/Žemyna+Vilnius" target="_blank" class="link-btn">Maps</a>
           </div>
         </div>
       </div>
