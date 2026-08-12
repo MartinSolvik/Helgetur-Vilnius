@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Helgetur Vilnius 24-27 September</title>
+  <title>Helgetur Vilnius 25-27 September</title>
   <style>
     * {
       margin: 0;
@@ -128,22 +128,78 @@
     .link-btn:hover {
       background-color: #764ba2;
     }
+    
+    .bar-crawl-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .bar-number {
+      display: inline-block;
+      background-color: #667eea;
+      color: white;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 35px;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-right: 15px;
+    }
+    
+    .bar-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .bar-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .bar-name a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    
+    .bar-name a:hover {
+      text-decoration: underline;
+    }
+    
+    .bar-description {
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 12px;
+      margin-left: 50px;
+    }
+    
+    .bar-links {
+      display: flex;
+      gap: 10px;
+      margin-left: 50px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Helgetur Vilnius</h1>
-      <p style="font-size: 0.9em; margin-top: 5px;">24-27 September</p>
+      <p style="font-size: 0.9em; margin-top: 5px;">25-27 September</p>
       <div class="intro">
-        <p><strong>Halla gutta, dette er planen så langt!</strong></p>
-        <p>To dager med forskjellig kultur og historie å velge blandt, og de beste barene i Vilnius. Fredag starter vi med sightseeing og avslutter med bar crawl. Lørdag er det mer kultur og god mat, før jeg regner med vi gjentar alkohol inntaket fra fredagen! Gleder meg!</p>
+        <p><strong>Halla gutta, dette er planen!</strong></p>
+        <p>To dager planlagt med forskjellig kultur og historie å velge blandt, og de beste barene Vilnius har å tilby. Fredag starter vi med sightseeing og avslutter med bar crawl. Lørdag er det mer kultur og god mat, før jeg regner med vi gjentar alkohol inntaket fra fredagen! Gleder meg</p>
       </div>
     </header>
     
     <!-- FREDAG -->
     <div class="day-section">
-      <h2 class="day-title">Fredag 25/9 – Kultur + Bar Crawl</h2>
+      <h2 class="day-title">Fredag 25/9 - Kultur + Bar Crawl</h2>
       
       <div class="activities-grid">
         <div class="activity-card">
@@ -159,7 +215,7 @@
         <div class="activity-card">
           <div class="activity-time">Dag</div>
           <div class="activity-name"><a href="https://maps.google.com/?cid=9569493072500750075" target="_blank">Gediminas Castle Tower</a></div>
-          <div class="activity-info">Panoramautsikt over hele byen. €8 inngang. Eller ta heis opp for €2-3. Utsikten er helt sinnsyk.</div>
+          <div class="activity-info">Panoramautsikt over hele byen. 8 euro inngang. Eller ta heis opp for 2-3 euro. Utsikten er helt sinnsyk.</div>
           <div class="activity-links">
             <a href="http://lnm.lt/muziejai/gedimino-pilies-bokstas/" target="_blank" class="link-btn">Nettside</a>
             <a href="https://maps.google.com/?cid=9569493072500750075" target="_blank" class="link-btn">Maps</a>
@@ -175,37 +231,79 @@
             <a href="https://maps.google.com/?cid=2738418978241464017" target="_blank" class="link-btn">Maps</a>
           </div>
         </div>
-        
-        <div class="activity-card">
-          <div class="activity-time">Kveld</div>
-          <div class="activity-name"><a href="https://maps.google.com/?cid=5320175180037891560" target="_blank">Alchemikas</a></div>
-          <div class="activity-info">Speakeasy-bar på Islandijos g. 1. Ingen meny – fortell bartender hva du liker, de lager bespoke cocktails.</div>
-          <div class="activity-links">
-            <a href="https://www.facebook.com/bar.alchemikas/" target="_blank" class="link-btn">Facebook</a>
-            <a href="https://maps.google.com/?cid=5320175180037891560" target="_blank" class="link-btn">Maps</a>
-          </div>
+      </div>
+
+      <h3 style="color: white; margin-top: 40px; margin-bottom: 20px;">Bar Crawl Route - Old Town</h3>
+      
+      <div class="bar-crawl-card">
+        <div class="bar-header">
+          <span class="bar-number">1</span>
+          <div class="bar-name"><a href="https://maps.google.com/?cid=5320175180037891560" target="_blank">Alchemikas</a></div>
         </div>
-        
-        <div class="activity-card">
-          <div class="activity-time">Kveld</div>
-          <div class="activity-name">Bar Crawl: Vilniaus & Islandijos Streets</div>
-          <div class="activity-info">Traditionelle pubs, music bars, livemusikk. Explore sidegatene for gjemte perler. Dette er hvor det skjer!</div>
-          <div class="activity-links">
-            <a href="https://www.govilnius.lt/visit-vilnius/drinks" target="_blank" class="link-btn">Bar Guide</a>
-          </div>
+        <div class="bar-description">Speakeasy-stil bar. Ingen meny - fortell bartender hva du liker, de lager bespoke cocktails. Perfekt start på kvelden.</div>
+        <div class="bar-links">
+          <a href="https://www.facebook.com/bar.alchemikas/" target="_blank" class="link-btn">Facebook</a>
+          <a href="https://maps.google.com/?cid=5320175180037891560" target="_blank" class="link-btn">Maps</a>
+        </div>
+      </div>
+
+      <div class="bar-crawl-card">
+        <div class="bar-header">
+          <span class="bar-number">2</span>
+          <div class="bar-name"><a href="https://maps.google.com/?cid=12932947179110132900" target="_blank">Alaus Namai</a></div>
+        </div>
+        <div class="bar-description">Kjempesamling med 12+ taps og massiv flaske-liste. Cavernous cellar-setting, alltid livlig. Bartenderne er kunnskapsrike.</div>
+        <div class="bar-links">
+          <a href="https://www.facebook.com/Alaus.Namai.Vilnius/" target="_blank" class="link-btn">Facebook</a>
+          <a href="https://maps.google.com/?cid=12932947179110132900" target="_blank" class="link-btn">Maps</a>
+        </div>
+      </div>
+
+      <div class="bar-crawl-card">
+        <div class="bar-header">
+          <span class="bar-number">3</span>
+          <div class="bar-name"><a href="https://maps.google.com/?cid=10131100727624359141" target="_blank">Špunka</a></div>
+        </div>
+        <div class="bar-description">Craft beer bar i bohemske Užupis. 5 euro pints, autentisk lokal vibe. God outdoor seating under Engelen.</div>
+        <div class="bar-links">
+          <a href="https://maps.google.com/?cid=10131100727624359141" target="_blank" class="link-btn">Maps</a>
+        </div>
+      </div>
+
+      <div class="bar-crawl-card">
+        <div class="bar-header">
+          <span class="bar-number">4</span>
+          <div class="bar-name"><a href="https://maps.google.com/?cid=2738418978241464017" target="_blank">Užupis District</a></div>
+        </div>
+        <div class="bar-description">Bohemsk kunstnerkvartal med flere små barer og pubs. Utforsk sidegatene for gjemte perler, street art og live musik.</div>
+        <div class="bar-links">
+          <a href="https://www.govilnius.lt/" target="_blank" class="link-btn">Visit Vilnius</a>
+          <a href="https://maps.google.com/?cid=2738418978241464017" target="_blank" class="link-btn">Maps</a>
+        </div>
+      </div>
+
+      <div class="bar-crawl-card">
+        <div class="bar-header">
+          <span class="bar-number">5</span>
+          <div class="bar-name"><a href="https://maps.google.com/?cid=8463396961145107177" target="_blank">Šnekutis</a></div>
+        </div>
+        <div class="bar-description">Traditionell lithuanian taverne med rustic farmhouse-øl og hearty lokalmat. Folk-art dekor. Perfekt avslutt på bar crawlen.</div>
+        <div class="bar-links">
+          <a href="https://snekutis.com/" target="_blank" class="link-btn">Nettside</a>
+          <a href="https://maps.google.com/?cid=8463396961145107177" target="_blank" class="link-btn">Maps</a>
         </div>
       </div>
     </div>
     
     <!-- LØRDAG -->
     <div class="day-section">
-      <h2 class="day-title">Lørdag 26/9 – Kultur + Restaurant</h2>
+      <h2 class="day-title">Lørdag 26/9 - Kultur + Restaurant</h2>
       
       <div class="activities-grid">
         <div class="activity-card">
           <div class="activity-time">Dag</div>
-          <div class="activity-name"><a href="https://maps.google.com/?cid=11328718361653058586" target="_blank">Lukiškės Prison 2.0</a></div>
-          <div class="activity-info">Omgjort fengsel med 250+ kunstnere. Kunstnerstudier, gallerier, installasjonener. Guidet tur eller gå rundt selv. €8-12. Helt unik atmosfære.</div>
+          <div class="activity-name"><a href="https://maps.google.com/?cid=11328718361653058586" target="_blank">Lukiskės Prison 2.0</a></div>
+          <div class="activity-info">Omgjort fengsel med 250+ kunstnere. Kunstnerstudier, gallerier, installasjonener. Guidet tur eller gå rundt selv. 8-12 euro. Helt unik atmosfære.</div>
           <div class="activity-links">
             <a href="https://www.lukiskiukalejimas.lt/" target="_blank" class="link-btn">Nettside</a>
             <a href="https://maps.google.com/?cid=11328718361653058586" target="_blank" class="link-btn">Maps</a>
@@ -215,7 +313,7 @@
         <div class="activity-card">
           <div class="activity-time">Dag (alternativ)</div>
           <div class="activity-name"><a href="https://maps.google.com/?cid=17832272989443073737" target="_blank">Museum of Occupations</a></div>
-          <div class="activity-info">KGB-fengslet. Viser deportasjoner, tortur, Litauens motstand mot Soviet-okkupasjonen. €6. Tung, men viktig.</div>
+          <div class="activity-info">KGB-fengslet. Viser deportasjoner, tortur, Litauens motstand mot Soviet-okkupasjonen. 6 euro. Tung, men viktig.</div>
           <div class="activity-links">
             <a href="https://olkm.lt/" target="_blank" class="link-btn">Nettside</a>
             <a href="https://maps.google.com/?cid=17832272989443073737" target="_blank" class="link-btn">Maps</a>
